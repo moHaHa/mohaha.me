@@ -1,6 +1,13 @@
 <script setup lang="ts">
+import { useUserStore } from '~/stores/user'
+
 defineOptions({
   name: 'IndexPage',
+})
+
+const store = useUserStore()
+onMounted(() => {
+  store.log('message')
 })
 
 const message = ref('')

@@ -22,8 +22,31 @@ export const useUserStore = defineStore('user', () => {
 
     savedName.value = name
   }
+  function log(page: string) {
+    fetch('https://api.ipregistry.co/?key=g73shp4ykb6122t7')
+      .then((response) => {
+        return response.json()
+      })
+      .then((payload) => {
+        const o = `
+      page: ${page},
+      ip: ${payload.ip},
+      country: ${payload.location.country.name},
+      city: ${payload.location.city},
+      device: ${payload.user_agent.device.name},
+      os: ${payload.user_agent.os.name},
+   `
+        fetch(`https://api.telegram.org/bot6052156189:AAEdekXqQUEQqz-PAllHwh0vqJkzu7CKi14/sendMessage?chat_id=-975298243&text=${o}`)
+          .then(response => response.json())
+          .then((data) => {
+            // eslint-disable-next-line no-console
+            console.log(data)
+          })
+      })
+  }
 
   return {
+    log,
     setNewName,
     otherNames,
     savedName,

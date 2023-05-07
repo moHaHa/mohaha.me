@@ -1,7 +1,16 @@
 <script setup lang="ts">
+import { useUserStore } from '~/stores/user'
+
+const store = useUserStore()
+onMounted(() => {
+  store.log('home')
+})
+
 defineOptions({
   name: 'IndexPage',
 })
+// const m = 'hi'
+// Send message to Telegram bot
 </script>
 
 <template>

@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { availableLocales, loadLanguageAsync } from '~/modules/i18n'
 
+import { useUserStore } from '~/stores/user'
+
+const store = useUserStore()
+function onAbout() {
+  store.log('about')
+}
+
 const { t, locale } = useI18n()
 
 async function toggleLocales() {
@@ -17,7 +24,7 @@ async function toggleLocales() {
     <RouterLink icon-btn to="/" :title="t('button.home')">
       <div i-carbon-daimond />
     </RouterLink>
-    <RouterLink icon-btn to="/about" :title="t('button.about')">
+    <RouterLink icon-btn to="/about" :title="t('button.about')" @click="onAbout">
       <div i-carbon-dicom-overlay />
     </RouterLink>
     <RouterLink icon-btn to="/message" :title="t('button.about')">
