@@ -35,5 +35,8 @@ async function toggleLocales() {
     <a v-if="false" icon-btn :title="t('button.toggle_langs')" @click="toggleLocales()">
       <div i-carbon-language />
     </a>
+    <div fixed bottom-10px right-10px text-sm op-50>
+      © Mohammad Al Hallaq
+    </div>
   </nav>
 </template>
