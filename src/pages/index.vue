@@ -19,38 +19,16 @@ const { t } = useI18n()
     <div text-4xl>
       <div i-carbon-campsite inline-block />
     </div>
-    <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
-      </a>
-    </p>
-    <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
-    </p>
-
-    <div py-4 />
-
-    <TheInput
-      v-model="name"
-      placeholder="What's your name?"
-      autocomplete="false"
-      @keydown.enter="go"
-    />
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
-
     <div>
-      <button
-        m-3 text-sm btn
-        :disabled="!name"
-        @click="go"
-      >
-        {{ t('button.go') }}
-      </button>
+      Mohammad Al Hallaq
     </div>
+    <p>
+      <em text-sm opacity-75>@moHaHa</em>
+    </p>
   </div>
 </template>
 
 <route lang="yaml">
 meta:
-  layout: home
+  layout: prototype
 </route>

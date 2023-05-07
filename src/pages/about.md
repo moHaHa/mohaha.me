@@ -8,14 +8,10 @@ title: About
   <h3>About</h3>
 </div>
 
-[Vitesse](https://github.com/antfu/vitesse) is an opinionated [Vite](https://github.com/vitejs/vite) starter template made by [@antfu](https://github.com/antfu) for mocking apps swiftly. With **file-based routing**, **components auto importing**, **markdown support**, I18n, PWA and uses **UnoCSS** for styling and icons.
+I'm [Mohammad Al Hallaq](https://mohaha.me)  Front End Developer located in Syria
+I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+My main experience is in front-end development but I also have a passion for design. Given that producing a modern website requires the combination of design, server technology, and the layer that users interacts with. I believe having experience in both design and development allows for making the most optimal user experiences.
 
-```js
-// syntax highlighting example
-function vitesse() {
-  const foo = 'bar'
-  console.log(foo)
-}
-```
+for contact [telegram](https://t.me/mohaha30) |  [email](tomail:eng.mohammad.alhallaq@gmail.com)
 
-Check out the [GitHub repo](https://github.com/antfu/vitesse) for more details.
+[..back](/)
