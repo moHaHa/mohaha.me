@@ -20,12 +20,14 @@ async function toggleLocales() {
     <RouterLink icon-btn to="/about" :title="t('button.about')">
       <div i-carbon-dicom-overlay />
     </RouterLink>
-
+    <RouterLink icon-btn to="/message" :title="t('button.about')">
+      <div i-carbon-chat />
+    </RouterLink>
+    <a icon-btn rel="noreferrer" href="https://t.me/mohaha30" target="_blank" title="GitHub">
+      <div i-carbon-send-alt-filled />
+    </a>
     <a icon-btn rel="noreferrer" href="https://github.com/mohaha" target="_blank" title="GitHub">
       <div i-carbon-logo-github />
-    </a>
-    <a icon-btn rel="noreferrer" href="https://t.me/mohaha30" target="_blank" title="GitHub">
-      <div i-carbon-chat />
     </a>
     <button icon-btn :title="t('button.toggle_dark')" @click="toggleDark()">
       <div i="carbon-sun dark:carbon-moon" />
