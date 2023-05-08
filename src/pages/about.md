@@ -8,9 +8,11 @@ title: About
   <h3>About</h3>
 </div>
 
-I'm [Mohammad Al Hallaq](https://mohaha.me)  Front End Developer located in Syria
-I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
-My main experience is in front-end development but I also have a passion for design. Given that producing a modern website requires the combination of design, server technology, and the layer that users interacts with.
+ [Mohammad Al Hallaq](https://mohaha.me)  Front End Developer located in Syria
+ , interested in open-source projects related to Vue, UI & animation, Bots & AI, I am perpetually inspired by the remarkable work of the GitHub community, including the repositories and users I follow,
+From stunning JS libraries and UI designs to groundbreaking AI initiatives, I'm always on the lookout for opportunities to contribute and collaborate
+
+I believe that *a ship in a harbor is safe, but that is not what ships built for*
 
 contact :  [telegram](https://t.me/mohaha30) or   [eng.mohammad.alhallaq@gmail.com](tomail:eng.mohammad.alhallaq@gmail.com) or just sned [quick message](/message)
 

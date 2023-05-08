@@ -7,6 +7,12 @@ const store = useUserStore()
 function onAbout() {
   store.log('about')
 }
+function onTel() {
+  store.log('telegram link')
+}
+function onGitHub() {
+  store.log('github link')
+}
 
 const { t, locale } = useI18n()
 
@@ -30,10 +36,10 @@ async function toggleLocales() {
     <RouterLink icon-btn to="/message" :title="t('button.about')">
       <div i-carbon-chat />
     </RouterLink>
-    <a icon-btn rel="noreferrer" href="https://t.me/mohaha30" target="_blank" title="GitHub">
+    <a icon-btn rel="noreferrer" href="https://t.me/mohaha30" target="_blank" title="GitHub" @click="onTel()">
       <div i-carbon-send-alt-filled />
     </a>
-    <a icon-btn rel="noreferrer" href="https://github.com/mohaha" target="_blank" title="GitHub">
+    <a icon-btn rel="noreferrer" href="https://github.com/mohaha" target="_blank" title="GitHub" @click="onGitHub()">
       <div i-carbon-logo-github />
     </a>
     <button icon-btn :title="t('button.toggle_dark')" @click="toggleDark()">
