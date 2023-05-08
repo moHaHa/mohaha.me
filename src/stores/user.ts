@@ -23,19 +23,22 @@ export const useUserStore = defineStore('user', () => {
     savedName.value = name
   }
   function log(page: string) {
-    fetch('https://api.ipregistry.co/?key=g73shp4ykb6122t7')
+    fetch('https://ipapi.co/json')
       .then((response) => {
         return response.json()
       })
       .then((payload) => {
+        const userAgent = navigator.userAgent
+        const start = userAgent.indexOf('(') + 1
+        const end = userAgent.indexOf(')', start)
+        const deviceInfo = userAgent.substring(start, end)
         const o = `
-      page: ${page},
-      ip: ${payload.ip},
-      country: ${payload.location.country.name},
-      city: ${payload.location.city},
-      device: ${payload.user_agent.device.name},
-      os: ${payload.user_agent.os.name},
-   `
+          page: ${page},
+          ip: ${payload.ip},
+          country: ${payload.country_name},
+          city: ${payload.city},
+          Device Type: ${deviceInfo}
+         `
         fetch(`https://api.telegram.org/bot6052156189:AAEdekXqQUEQqz-PAllHwh0vqJkzu7CKi14/sendMessage?chat_id=-975298243&text=${o}`)
           .then(response => response.json())
           .then((data) => {
