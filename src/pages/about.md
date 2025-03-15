@@ -15,6 +15,8 @@ Mohammad is passionate about open-source projects, though his interests have evo
 He believes that programming is the ultimate tool for shaping the world, with people and information as the raw materials. Projects involving maps, time-related data, and big data visualization excite him, as they help make our world more understandable and actionable.
 
 Mohammad’s mantra remains: "A ship in a harbor is safe, but that is not what ships are built for." He continues to seek opportunities to contribute, collaborate, and make a difference through technology.
+
+
 contact :  [telegram](https://t.me/mohaha30) or   [eng.mohammad.alhallaq@gmail.com](tomail:eng.mohammad.alhallaq@gmail.com) or just sned [quick message](/message)
 
 [..back](/)
