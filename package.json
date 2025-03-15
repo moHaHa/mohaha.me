@@ -1,14 +1,12 @@
 {
   "name": "mohaha.me",
-  "version": "0.1.0",
-  "author": {
-    "name": "Mohammad Al Hallaq",
-    "username": "mohaha",
-    "email" : "eng.mohammad.alhallaq@gmail.com"
-  },
   "type": "module",
+  "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@8.3.0",
+  "author": {
+    "name": "Mohammad Al Hallaq"
+  },
   "scripts": {
     "build": "vite-ssg build",
     "dev": "vite --port 3333 --open",
